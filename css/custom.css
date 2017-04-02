@@ -1,0 +1,174 @@
+/* reset */
+/* line 2, custom.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* line 22, custom.scss */
+body {
+  line-height: 1;
+  box-sizing: border-box; }
+
+/* line 26, custom.scss */
+ol, ul {
+  list-style: none; }
+
+/* fonts */
+@font-face {
+  font-family: 'opensans';
+  src: url("../assets/fonts/OpenSans-Light.ttf"); }
+/* mixins */
+/* variables */
+/* style */
+/* line 53, custom.scss */
+html {
+  font-family: 'opensans'; }
+
+/* line 57, custom.scss */
+body {
+  /* retina */
+  background: url("../assets/img/nex-background@2x.png") no-repeat top center;
+  background-size: cover;
+  background-color: grey;
+  width: 100vw;
+  height: 100vh; }
+  @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-devicepixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+    /* line 57, custom.scss */
+    body {
+      background: url("../assets/img/nex-background@2x.png") no-repeat top center;
+      background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      -webkit-background-size: cover;
+      background-color: grey; } }
+
+/* line 78, custom.scss */
+.push-top {
+  /* background-color:red; */
+  height: 10vh; }
+
+/* line 83, custom.scss */
+.push-bottom {
+  /* background-color:red; */
+  height: 5vh; }
+
+/* line 88, custom.scss */
+.header {
+  /* background-color:pink; */ }
+  /* line 90, custom.scss */
+  .header .logo {
+    background-color: orange;
+    background: url("../assets/img/nex-logo.svg") no-repeat top left;
+    background-size: contain;
+    margin: 0 auto;
+    width: 25vh;
+    height: 25vh; }
+    @media screen and (orientation: landscape) {
+      /* line 90, custom.scss */
+      .header .logo {
+        width: 30vh;
+        height: 30vh; } }
+
+/* line 104, custom.scss */
+.info {
+  /* background-color:green; */
+  position: relative;
+  color: white; }
+  @media screen and (orientation: landscape) {
+    /* line 104, custom.scss */
+    .info {
+      height: 40vh; } }
+  @media screen and (orientation: portrait) {
+    /* line 104, custom.scss */
+    .info {
+      height: 45vh; } }
+  /* line 114, custom.scss */
+  .info div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100vw;
+    text-align: center; }
+  @media screen and (min-width: 769px) {
+    /* line 104, custom.scss */
+    .info {
+      font-size: 1.5em; } }
+
+/* line 122, custom.scss */
+.footer {
+  position: relative; }
+  @media screen and (orientation: landscape) {
+    /* line 122, custom.scss */
+    .footer {
+      height: 10vh;
+      font-size: 0.55em; } }
+  @media screen and (orientation: portrait) {
+    /* line 122, custom.scss */
+    .footer {
+      height: 15vh;
+      font-size: 0.55em; } }
+  @media screen and (min-width: 769px) and (orientation: landscape) {
+    /* line 122, custom.scss */
+    .footer {
+      height: 15vh;
+      font-size: 0.75em; } }
+  /* line 136, custom.scss */
+  .footer .wrapper {
+    width: 25vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    @media screen and (orientation: landscape) {
+      /* line 136, custom.scss */
+      .footer .wrapper {
+        width: 100vw;
+        text-align: center; } }
+    /* line 146, custom.scss */
+    .footer .wrapper div {
+      box-sizing: border-box;
+      text-align: center;
+      margin: 1em 0; }
+      @media screen and (orientation: landscape) {
+        /* line 146, custom.scss */
+        .footer .wrapper div {
+          display: inline-block;
+          width: 20vw; } }
+      /* line 153, custom.scss */
+      .footer .wrapper div p {
+        color: white;
+        padding: 0.3em; }
+        /* line 156, custom.scss */
+        .footer .wrapper div p:first-child {
+          border-bottom: 1px solid orange; }
+      @media screen and (orientation: landscape) {
+        /* line 161, custom.scss */
+        .footer .wrapper div:nth-child(2) {
+          margin: 1em 2em; } }
+    /* line 168, custom.scss */
+    .footer .wrapper a:link, .footer .wrapper a:visited, .footer .wrapper a:hover, .footer .wrapper a:active {
+      color: white;
+      text-decoration: none; }
+    /* line 172, custom.scss */
+    .footer .wrapper a[href^=tel], .footer .wrapper a[href^=mailto] {
+      color: white;
+      text-decoration: none; }
+    /* line 176, custom.scss */
+    .footer .wrapper a[href^=tel] {
+      cursor: text; }
